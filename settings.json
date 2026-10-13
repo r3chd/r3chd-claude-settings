@@ -1,0 +1,68 @@
+{
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v afplay >/dev/null && afplay /System/Library/Sounds/Purr.aiff || true"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "context7@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
+    "code-review@claude-plugins-official": false,
+    "frontend-design@claude-plugins-official": false,
+    "claude-md-management@claude-plugins-official": true,
+    "claude-mem@thedotmack": true,
+    "mattpocock-skills@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "humanizer@humanizer": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "humanizer": {
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "mcpServers": {
+    "unity-mcp": {
+      "command": "/Users/r3chd/.unity/relay/relay_mac_arm64.app/Contents/MacOS/relay_mac_arm64",
+      "args": [
+        "--mcp"
+      ]
+    },
+    "drawio": {
+      "type": "http",
+      "url": "https://mcp.draw.io/mcp"
+    }
+  }
+}
